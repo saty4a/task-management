@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.addButton {
+    width: 20%;
+    height: 9.5vh;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    background-color: #122736;
+    border: 2px solid white;
+}
+
+.inputForm {
+  width: 100%;
+}
+
+.inputTitle {
+  width: 100%;
+  text-align: start;
+  background-color: transparent;
+  padding-left: 2rem;
+  color: white;
+  border: 2px solid white;
+  outline: none;
+}
+
+.inputContent {
+  width: 100%;
+  text-align: start;
+  padding-left: 2rem;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+}
+
+.title {
+  /* margin-left: 2rem; */
+  outline: none;
+  text-align: center;
+  outline: none;
+}
+
+.content {
+  margin-top: 2rem;
+  outline: none;
+  color: #a9afb3;
+  text-align: center;
+}
+
+.deleteBtn {
+  width: 25%;
+  padding: 5% 3% 5% 3%;
+  border-radius: 20%;
+  margin-top: 3rem;
+  border: 2px solid white;
+}
+
+.modifyBtn {
+  width: 25%;
+  padding: 5% 3% 5% 3%;
+  border-radius: 20%;
+  margin-top: 3rem;
+  border: 2px solid white;
+}
+
+.tagInput {
+  flex-grow: 1;
+  padding: 0.5em 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.dropdown {
+  width: fit-content;
+}
+
+/* style suggestions */
+.suggestion {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: min(50vw, 600px);
+  background-color: white;
+  color: #000;
+  height: 30vh;
+  overflow: scroll;
+  text-align: center;
+}
+
+/* style suggestion contents */
+.suggestion-contents {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  padding: 10px 10px;
+  text-align: start;
+}
+
+/* change color of suggestions contents */
+.suggestion-contents:hover {
+  background-color: #bfcbd2;
+}
+
+.dropdown:hover .suggestion {
+  display: flex;
+}
+
+@media screen and (min-width: 425px) {
+  .addButton {
+    width: 17%;
+    height: 11vh;
+  }
+
+  .deleteBtn {
+    width: 16%;
+    padding: 4% 3% 4% 3%;
+  }
+
+  .modifyBtn {
+    width: 16%;
+    padding: 4% 3% 4% 3%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .addButton {
+    width: 12%;
+    height: 11vh;
+  }
+
+  .inputTitle {
+    width: 50%;
+  }
+
+  .inputContent {
+    width: 50%;
+  }
+
+  .deleteBtn {
+    width: 10%;
+    padding: 2% 0% 2% 0%;
+  }
+
+  .modifyBtn {
+    width: 10%;
+    padding: 2% 0% 2% 0%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .addButton {
+    width: 10%;
+    height: 9vh;
+  }
+
+  .deleteBtn {
+    width: 8%;
+    padding: 2% 0% 2% 0%;
+  }
+
+  .modifyBtn {
+    width: 8%;
+    padding: 2% 0% 2% 0%;
+  }
+
+  .suggestion{
+    width: min(30vw, 600px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .addButton {
+    width: 9%;
+    height: 11vh;
+  }
+
+  .deleteBtn {
+    width: 6%;
+    padding: 1.5% 0% 1.5% 0%;
+  }
+
+  .modifyBtn {
+    width: 6%;
+    padding: 1.5% 0% 1.5% 0%;
+  }
+
+  .suggestion{
+    width: min(20vw, 600px);
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .addButton {
+    width: 6%;
+    height: 8vh;
+  }
+
+  .suggestion{
+    width: min(17vw, 600px);
+  }
+}
