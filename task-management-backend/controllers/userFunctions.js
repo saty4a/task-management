@@ -120,7 +120,7 @@ export const setPassword = async (request, response, next) => {
       id: user._id,
     };
     const token = jwt.sign(payload, secret, { expiresIn: "5m" });
-    const link = `http://localhost:3000/user/reset-password/${user._id}/${token}`;
+    const link = `https://task-management-frontend-rho.vercel.app/user/reset-password/${user._id}/${token}`;
     const mail = mailer(request.body.email, link);
     return response.status(200).json({
       data: null,
