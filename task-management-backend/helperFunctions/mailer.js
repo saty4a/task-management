@@ -9,10 +9,6 @@ export const mailer = (emailId, link) => {
         user: `${config.sendMailId}`,
         pass: `${config.sendMailPassword}`,
       },
-      secure: false,
-      requireTLS: true,
-      port: 587,
-      host: "smtp.gmail.com",
     })
     .sendMail(
         {
