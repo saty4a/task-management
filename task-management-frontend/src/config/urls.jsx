@@ -1,4 +1,4 @@
-const domainName = "https://task-management-blue-theta.vercel.app;
+const domainName = "https://task-management-blue-theta.vercel.app";
 
 export const urls = {
     register: `${domainName}/user/register`,
