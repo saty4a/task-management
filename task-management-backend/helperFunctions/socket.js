@@ -5,7 +5,8 @@ export const socketConnection = () => {
     const io = new Server(server, {
         cors: {
             origin: "*",
-        }
+        },
+        addTrailingSlash: false,
     });
     io.on("connection", (socket) => {
         socket.on("updateStatus", (data) => {
